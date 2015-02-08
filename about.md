@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+Just your average joe who loves anime, video games, manga, tennis, basketball, and ofcourse programming!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[thogotmail@gmail.com](mailto:thogotmail@gmail.com)
