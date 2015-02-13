@@ -16,8 +16,8 @@ title: Quiz 1
 <strong>3. There are two predominant views in a relational database. What are they, and how are they different?</strong>
 <p>
   The two predominant views in in a relational database are schema view and data view.
-<code>schema view</code> shows us the data type of each attribute of a table in a database.</br>
-<code>data view</code> shows us the actual data in a table in a database.
+<strong>schema view</strong> shows us the data type of each attribute of a table in a database.</br>
+<strong>data view</strong> shows us the actual data in a table in a database.
 </p>
 
 <strong>4. In a table, what do we call the column that serves as the main identifier for a row of data? We're looking for the general database term, not the column name.</strong>
@@ -35,7 +35,7 @@ title: Quiz 1
 
 <strong>7. If there's an ActiveRecord model called "CrazyMonkey", what should the table name be?</strong>
 <p>
-  The table name should be "crazy_monkeys". You can use rails method <code>CrazyMonkey.tableize</code> to help you determine the table name.
+  The table name should be "crazy_monkeys". You can use rails method <code>"CrazyMonkey".tableize</code> to help you determine the table name.
 </p>
 
 <strong>8. If I'm building a 1:M association between Project and Issue, what will the model associations and foreign key be?</strong>
