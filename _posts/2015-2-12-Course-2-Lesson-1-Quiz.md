@@ -42,13 +42,13 @@ title: Quiz 1
 <p>The model association will be:</p>
 <pre>
 class Project &lt; ActiveRecord::Base
-  has_many :issues
+  has&lowbar;many :issues
 end
 </pre>
 
 <pre>
 class Issue &lt; ActiveRecord::Base
-  belongs_to :project, foreign_key: "project_id"
+  belongs&lowbar;to :project, foreign&lowbar;key: "project&lowbar;id"
 end
 </pre>
 
@@ -63,16 +63,16 @@ end
     <p>The other model should look like:</p>
 <pre>
 class Animal &lt; ActiveRecord::Base
-  belongs_to :zoo
+  belongs&lowbar;to :zoo
 end
 </pre>
     <p>The database schema should look like:</p>
 <pre>
 class CreateAnimals &lt; ActiveRecord::Migration
   def change
-    create_table :animals do |animal|
+    create&lowbar;table :animals do |animal|
       t.string :name
-      t.integer :zoo_id
+      t.integer :zoo&lowbar;id
     end
   end
 end
@@ -81,7 +81,7 @@ end
 <pre>
 class CreateZoos &lt; ActiveRecord::Migration
   def change
-    create_table :zoos do |zoo|
+    create&lowbar;table :zoos do |zoo|
       t.string :name
     end
   end
@@ -93,7 +93,7 @@ end
 
   <li><strong>How do I create an animal called "jumpster" in a zoo called "San Diego Zoo"?</strong></li>
 <pre>$ zoo = Zoo.create(name: "San Diego Zoo")
-$ Animal.create(name: "jumpster", zoo_id: zoo.id)
+$ Animal.create(name: "jumpster", zoo&lowbar;id: zoo.id)
 </pre>
 </ul>
 
@@ -104,7 +104,7 @@ $ Animal.create(name: "jumpster", zoo_id: zoo.id)
 <pre>
 $ animal = Animal.create
 $ animal.name = "jumpster"
-$ animal.zoo_id = 1
+$ animal.zoo&lowbar;id = 1
 </pre>
 
 <strong>11. What does this code do? <code>Animal.first</code></strong>
@@ -137,20 +137,20 @@ $ Animal.create(name: "Joe")
 <strong>15. Suppose we have a User model and a Group model, and we have a M:M association all set up. How do we associate the two?</strong>
 <pre>
 class User &lt; ActiveRecord::Base
-  has_many :user_groups
-  has_many :groups, through: user_groups
+  has&lowbar;many :user&lowbar;groups
+  has&lowbar;many :groups, through: user&lowbar;groups
 end
 </pre>
 
 <pre>
 class UserGroup &lt; ActiveRecord::Base
-  belongs_to :user
-  belongs_to :group
+  belongs&lowbar;to :user
+  belongs&lowbar;to :group
 end
 </pre><br/>
 <pre>
 class Group &lt; ActiveRecord::Base
-  has_many :user_groups
-  has_many :users, through: user_groups
+  has&lowbar;many :user&lowbar;groups
+  has&lowbar;many :users, through: user&lowbar;groups
 end
 </pre>
