@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Just your average joe who loves anime, video games, manga, tennis, basketball, and ofcourse programming!
+Just your average joe who loves anime, video games, manga, tennis, basketball, and of course programming!
 
 ### Contact me
 
